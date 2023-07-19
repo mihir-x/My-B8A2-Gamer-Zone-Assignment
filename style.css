@@ -101,6 +101,49 @@ header{
 }
 
 
+/* online games video styles------------------------------- */
+.online-games-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10rem;
+    text-align: center;
+
+}
+.online-games-title{
+    font-size: 3rem;
+    color: #0B0223;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.funny-videos{
+    font-size: 3rem;
+    background-image: linear-gradient(180deg, #F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.online-games-description{
+    color: #534C64;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+.online-video-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.video-card{
+    margin-bottom: 2rem;
+}
+.video-card img{
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+.video-description{
+    color: #534C64;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
 
 /* responsive design for small device */
 @media screen and (max-width:576px) {
@@ -122,7 +165,9 @@ header{
     .banner-information{
         padding-left: 25%;
     }
-
+    .online-video-container{
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -136,5 +181,8 @@ header{
     }
     .banner-container{
         max-width: 700px;
+    }
+    .online-video-container{
+        grid-template-columns: repeat(2,1fr);
     }
 }
