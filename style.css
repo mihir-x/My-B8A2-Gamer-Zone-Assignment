@@ -131,10 +131,41 @@ header{
 }
 .video-card{
     margin-bottom: 2rem;
+    position: relative;
 }
 .video-card img{
     width: 90%;
     margin-bottom: 1.5rem;
+}
+.overlay{
+    position: absolute;
+    width: 90%;
+    height: 76%;
+    top: 0;
+    left: .8rem;
+    background: rgba(0, 0, 0, 0);
+    border-radius: .9rem;
+    
+}
+.play-btn{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    opacity: 0;
+}
+.play-btn img{
+    width: 3rem;
+}
+.play-btn p{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #F948B2;
+}
+.video-card:hover .overlay{
+    background: rgba(0, 0, 0, 0.4);
+} 
+.video-card:hover .play-btn{
+    opacity: 1;
 }
 .video-description{
     color: #534C64;
