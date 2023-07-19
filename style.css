@@ -151,6 +151,7 @@ header{
     justify-content: end;
     align-items: center;
     gap: 14rem;
+    margin-bottom: 9rem;
 }
 .instant-play-information{
     width: 35%;
@@ -180,6 +181,42 @@ header{
     position: absolute;
     top: 16rem;
     left: -7rem;
+}
+
+/* games collection container styles-------------------------------- */
+.games-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03), rgba(255, 66, 165, 0.03));
+    padding-bottom: 6rem;
+}
+.games-collection{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.game{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem;
+    background-color: #FFF;
+    border-radius: 3rem;
+}
+.game img{
+    width: 3rem;
+}
+.game h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.game:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
 }
 
 
@@ -214,6 +251,11 @@ header{
     .instant-play-information, .instant-play-image{
         width: 60%;
         text-align: center;
+    }
+    .games-collection{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
     }
 
 }
