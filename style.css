@@ -4,7 +4,11 @@
     font-family: 'Work Sans', sans-serif;
     /* background-color: #FFF; */
 }
-
+.colored-text{
+    background-image: linear-gradient(180deg, #F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+}
 /* navigation bar styles----------------------------------- */
 header{
     padding-top: 2rem;
@@ -66,9 +70,6 @@ header{
 .goat{
     font-size: 5.9rem;
     font-weight: 800;
-    background-image: linear-gradient(180deg, #F948B2, #8758F1);
-    color: transparent;
-    -webkit-background-clip: text;
     margin-bottom: 1.5rem;
 }
 .banner-description{
@@ -117,9 +118,6 @@ header{
 }
 .funny-videos{
     font-size: 3rem;
-    background-image: linear-gradient(180deg, #F948B2, #8758F1);
-    color: transparent;
-    -webkit-background-clip: text;
 }
 .online-games-description{
     color: #534C64;
@@ -145,6 +143,47 @@ header{
 }
 
 
+/* instant play styles----------------------------- */
+.instant-play-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 14rem;
+}
+.instant-play-information{
+    width: 35%;
+    text-align: right;
+}
+.instant-title{
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+.instant-description{
+    color: #534C64;
+    font-size: 1.125rem;
+    
+    margin-top: 1.5rem;
+    line-height: 1.8rem;
+}
+.instant-play-image{
+    width: 40%;
+    position: relative;
+}
+.instant-img1{
+    width: 100%;
+}
+.instant-img2{
+    width: 50%;
+    position: absolute;
+    top: 16rem;
+    left: -7rem;
+}
+
+
+
 /* responsive design for small device */
 @media screen and (max-width:576px) {
     *{
@@ -167,6 +206,14 @@ header{
     }
     .online-video-container{
         grid-template-columns: 1fr;
+    }
+    .instant-play-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .instant-play-information, .instant-play-image{
+        width: 60%;
+        text-align: center;
     }
 
 }
